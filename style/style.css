@@ -13,7 +13,6 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 1440px;
     background-color: hsl(233, 47%, 7%);
 }
 .container{
@@ -30,7 +29,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 70px 0 65px 70px;
+    padding: 70px 20px 65px 70px;
     flex: 1;
     background-color: hsl(244, 38%, 16%);
 }
@@ -101,4 +100,57 @@ body{
 }
 .attribution a:hover{
     text-decoration: underline;
+}
+
+@media (max-width: 376px)
+{
+    /* body{
+        position: relative;
+        margin: auto;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: hsl(233, 47%, 7%);
+    } */
+    body{
+        height: 100%;
+        padding: 50px 0;
+    }
+    /* .container{
+        height: 445px;
+        width: 1110px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        overflow: hidden;
+    } */
+    
+  .container {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    width: 330px;
+    height: 100%;
+    padding: 20px 20px 65px 70px;
+    overflow: visible;
+
+    background-color: red;
+   }
+   /* .left-side{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 70px 20px 65px 70px;
+        flex: 1;
+        background-color: hsl(244, 38%, 16%);
+    } */
+   .left-side{
+    flex: 2;
+   }
+   .right-side{
+    flex: 1;
+   }
 }

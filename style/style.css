@@ -22,6 +22,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -48,6 +49,7 @@ body{
     font-size: 15px;
     color: hsla(0, 0%, 100%, 0.75);
     padding-bottom: 60px;
+    padding-right: 120px;
     line-height: 25px;
 }
 .numbers{
@@ -83,9 +85,12 @@ body{
 .img{
     height: 100%;
     width: 100%;
-    background-color: hsl(277, 64%, 61%, 0.3);
+    background-color: hsla(277, 64%, 27%, 0.7);
 }
 .attribution{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     bottom: 50px;
     color: hsla(0, 0%, 100%, 0.6);
@@ -104,53 +109,48 @@ body{
 
 @media (max-width: 376px)
 {
-    /* body{
-        position: relative;
-        margin: auto;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background-color: hsl(233, 47%, 7%);
-    } */
     body{
         height: 100%;
         padding: 50px 0;
-    }
-    /* .container{
-        height: 445px;
-        width: 1110px;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        overflow: hidden;
-    } */
-    
+    }  
   .container {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     width: 330px;
-    height: 100%;
-    padding: 20px 20px 65px 70px;
-    overflow: visible;
-
-    background-color: red;
+    height: 800px;
+    padding: 0;
+    /* overflow: visible; */
    }
-   /* .left-side{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        padding: 70px 20px 65px 70px;
-        flex: 1;
-        background-color: hsl(244, 38%, 16%);
-    } */
    .left-side{
     flex: 2;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+   }
+   .title h1{
+    font-size: 25px;
+    padding: 50px 40px 20px 40px;
+   }
+   .content p{
+    font-size: 14px;
+    padding: 0px 40px;
+   }
+   .numbers{
+    padding: 50px 0px 40px 0px;
+    flex-direction: column;
+    gap: 30px;
    }
    .right-side{
     flex: 1;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
    }
+   .attribution{
+    bottom: 20px;
+   }
+   .attribution a{
+    font-size: 10px;
+    margin-left: 3px;
+    }
 }
